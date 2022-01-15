@@ -10,6 +10,7 @@
 		2A66394B8A39BAF887ACD0CB /* Pods_PoqAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7387EE2027667BC3D7020184 /* Pods_PoqAppTests.framework */; };
 		A0A81DF25E5BA896BFF1362B /* Pods_PoqApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98046BB1371317051C3C6080 /* Pods_PoqApp.framework */; };
 		B549DB46C034186FBA55EBF4 /* Pods_PoqApp_PoqAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35AC48009C89444C6A8AD4E /* Pods_PoqApp_PoqAppUITests.framework */; };
+		C3346CF92792E2C80002EA91 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3346CF82792E2C80002EA91 /* UIViewExtension.swift */; };
 		C3E893842792C59D00EC763B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893832792C59D00EC763B /* AppDelegate.swift */; };
 		C3E893862792C59D00EC763B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893852792C59D00EC763B /* SceneDelegate.swift */; };
 		C3E8938B2792C59D00EC763B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E893892792C59D00EC763B /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 		C3E893D12792D00800EC763B /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893D02792D00700EC763B /* License.swift */; };
 		C3E893D32792D05F00EC763B /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893D22792D05F00EC763B /* Owner.swift */; };
 		C3E893D52792D12200EC763B /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893D42792D12200EC763B /* Permissions.swift */; };
+		C3E893D72792D24500EC763B /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893D62792D24500EC763B /* ReposViewModel.swift */; };
+		C3E893DB2792D8D800EC763B /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893DA2792D8D800EC763B /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,7 @@
 		98046BB1371317051C3C6080 /* Pods_PoqApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoqApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35AC48009C89444C6A8AD4E /* Pods_PoqApp_PoqAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoqApp_PoqAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A746E005E7C4F1F6EDEA4754 /* Pods-PoqApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqApp.debug.xcconfig"; path = "Target Support Files/Pods-PoqApp/Pods-PoqApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C3346CF82792E2C80002EA91 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C3E893802792C59D00EC763B /* PoqApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoqApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E893832792C59D00EC763B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E893852792C59D00EC763B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 		C3E893D02792D00700EC763B /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		C3E893D22792D05F00EC763B /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		C3E893D42792D12200EC763B /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		C3E893D62792D24500EC763B /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		C3E893DA2792D8D800EC763B /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		C5CF6BBD85AC9C5A4623F755 /* Pods-PoqAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqAppTests.release.xcconfig"; path = "Target Support Files/Pods-PoqAppTests/Pods-PoqAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC20549F2E0119881774A834 /* Pods-PoqApp-PoqAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqApp-PoqAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoqApp-PoqAppUITests/Pods-PoqApp-PoqAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A75BA56D20050EE86A58DF /* Pods-PoqApp-PoqAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqApp-PoqAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PoqApp-PoqAppUITests/Pods-PoqApp-PoqAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +217,7 @@
 		C3E893B62792C71F00EC763B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C3E893D62792D24500EC763B /* ReposViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 		C3E893B72792C72500EC763B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C3E893DA2792D8D800EC763B /* MainTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 		C3E893BD2792C75000EC763B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C3346CF82792E2C80002EA91 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -524,8 +533,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3346CF92792E2C80002EA91 /* UIViewExtension.swift in Sources */,
 				C3E893842792C59D00EC763B /* AppDelegate.swift in Sources */,
 				C3E893862792C59D00EC763B /* SceneDelegate.swift in Sources */,
+				C3E893D72792D24500EC763B /* ReposViewModel.swift in Sources */,
 				C3E893C32792C80A00EC763B /* NetworkError.swift in Sources */,
 				C3E893CB2792CFC500EC763B /* ReposResponse.swift in Sources */,
 				C3E893D52792D12200EC763B /* Permissions.swift in Sources */,
@@ -533,6 +544,7 @@
 				C3E893C92792C9DA00EC763B /* NetworkManager.swift in Sources */,
 				C3E893C52792C81A00EC763B /* BaseViewController.swift in Sources */,
 				C3E893BF2792C76B00EC763B /* Constants.swift in Sources */,
+				C3E893DB2792D8D800EC763B /* MainTableViewCell.swift in Sources */,
 				C3E893D32792D05F00EC763B /* Owner.swift in Sources */,
 				C3E893D12792D00800EC763B /* License.swift in Sources */,
 				C3E893C72792C82A00EC763B /* MainViewController.swift in Sources */,

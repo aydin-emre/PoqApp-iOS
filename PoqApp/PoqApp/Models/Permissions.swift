@@ -16,4 +16,5 @@ struct Permissions: Codable {
 
 enum Visibility: String, Codable {
     case visibilityPublic = "public"
+    case visibilityPrivate = "private"
 }

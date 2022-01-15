@@ -43,7 +43,6 @@ public class NetworkManager {
         }
 
         var inlineParameters: Parameters = [:]
-        inlineParameters["api_key"] = "f697674970ab5c03ecf869dbeb1582cd"
 
         if let parameters = parameters {
             for key in parameters.keys {
@@ -56,8 +55,13 @@ public class NetworkManager {
         print("\n----- PARAMETERS: -----\n \(inlineParameters)\n--------------------------\n")
 
         if let networkReachabilityManager = NetworkReachabilityManager(), networkReachabilityManager.isReachable {
-            AF.request(baseURL+path, method: method, parameters: inlineParameters, encoding: encoding, headers: inlineHeaders)
-                .validate(statusCode: 200..<500).responseDecodable(of: type) { (response) in
+            AF.request(baseURL+path,
+                       method: method,
+                       parameters: inlineParameters,
+                       encoding: encoding,
+                       headers: inlineHeaders)
+                .validate(statusCode: 200..<500)
+                .responseDecodable(of: type) { (response) in
                 DispatchQueue.main.async {
                     if let viewLoading = viewLoading {
                         viewLoading.isHidden = true
@@ -81,9 +85,9 @@ public class NetworkManager {
         }
     }
 
-    func repos(completion: @escaping (Result<ReposResponse, NetworkError>) -> Void) {
-        request(of: ReposResponse.self, forPath: reposPath, method: .get, showLoadingView: true) { response in
-            if let response = response as? ReposResponse {
+    func repos(completion: @escaping (Result<[ReposResponse], NetworkError>) -> Void) {
+        request(of: [ReposResponse].self, forPath: reposPath, method: .get, showLoadingView: true) { response in
+            if let response = response as? [ReposResponse] {
                 completion(.success(response))
             } else {
                 completion(.failure(NetworkError.objectParseError))
