@@ -12,13 +12,17 @@
 		B549DB46C034186FBA55EBF4 /* Pods_PoqApp_PoqAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35AC48009C89444C6A8AD4E /* Pods_PoqApp_PoqAppUITests.framework */; };
 		C3E893842792C59D00EC763B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893832792C59D00EC763B /* AppDelegate.swift */; };
 		C3E893862792C59D00EC763B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893852792C59D00EC763B /* SceneDelegate.swift */; };
-		C3E893882792C59D00EC763B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893872792C59D00EC763B /* ViewController.swift */; };
 		C3E8938B2792C59D00EC763B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E893892792C59D00EC763B /* Main.storyboard */; };
 		C3E8938D2792C59E00EC763B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E8938C2792C59E00EC763B /* Assets.xcassets */; };
 		C3E893902792C59E00EC763B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E8938E2792C59E00EC763B /* LaunchScreen.storyboard */; };
 		C3E8939B2792C59F00EC763B /* PoqAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E8939A2792C59F00EC763B /* PoqAppTests.swift */; };
 		C3E893A52792C59F00EC763B /* PoqAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893A42792C59F00EC763B /* PoqAppUITests.swift */; };
 		C3E893A72792C59F00EC763B /* PoqAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893A62792C59F00EC763B /* PoqAppUITestsLaunchTests.swift */; };
+		C3E893BF2792C76B00EC763B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893BE2792C76B00EC763B /* Constants.swift */; };
+		C3E893C12792C7F900EC763B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893C02792C7F900EC763B /* Alert.swift */; };
+		C3E893C32792C80A00EC763B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893C22792C80A00EC763B /* NetworkError.swift */; };
+		C3E893C52792C81A00EC763B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893C42792C81A00EC763B /* BaseViewController.swift */; };
+		C3E893C72792C82A00EC763B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893C62792C82A00EC763B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +51,6 @@
 		C3E893802792C59D00EC763B /* PoqApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoqApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E893832792C59D00EC763B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E893852792C59D00EC763B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3E893872792C59D00EC763B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3E8938A2792C59D00EC763B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3E8938C2792C59E00EC763B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3E8938F2792C59E00EC763B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +60,11 @@
 		C3E893A02792C59F00EC763B /* PoqAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoqAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E893A42792C59F00EC763B /* PoqAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoqAppUITests.swift; sourceTree = "<group>"; };
 		C3E893A62792C59F00EC763B /* PoqAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoqAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3E893BE2792C76B00EC763B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C3E893C02792C7F900EC763B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C3E893C22792C80A00EC763B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C3E893C42792C81A00EC763B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C3E893C62792C82A00EC763B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C5CF6BBD85AC9C5A4623F755 /* Pods-PoqAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqAppTests.release.xcconfig"; path = "Target Support Files/Pods-PoqAppTests/Pods-PoqAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC20549F2E0119881774A834 /* Pods-PoqApp-PoqAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqApp-PoqAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoqApp-PoqAppUITests/Pods-PoqApp-PoqAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A75BA56D20050EE86A58DF /* Pods-PoqApp-PoqAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqApp-PoqAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PoqApp-PoqAppUITests/Pods-PoqApp-PoqAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +119,6 @@
 				233C3BD7899E343877DD06C7 /* Pods-PoqAppTests.debug.xcconfig */,
 				C5CF6BBD85AC9C5A4623F755 /* Pods-PoqAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,12 +147,15 @@
 		C3E893822792C59D00EC763B /* PoqApp */ = {
 			isa = PBXGroup;
 			children = (
-				C3E893832792C59D00EC763B /* AppDelegate.swift */,
-				C3E893852792C59D00EC763B /* SceneDelegate.swift */,
-				C3E893872792C59D00EC763B /* ViewController.swift */,
-				C3E893892792C59D00EC763B /* Main.storyboard */,
-				C3E8938C2792C59E00EC763B /* Assets.xcassets */,
-				C3E8938E2792C59E00EC763B /* LaunchScreen.storyboard */,
+				C3E893BD2792C75000EC763B /* Extensions */,
+				C3E893BC2792C74800EC763B /* Managers */,
+				C3E893BB2792C74000EC763B /* Models */,
+				C3E893B92792C73100EC763B /* Helper */,
+				C3E893B82792C72B00EC763B /* ViewControllers */,
+				C3E893B72792C72500EC763B /* Views */,
+				C3E893B62792C71F00EC763B /* ViewModels */,
+				C3E893B52792C71800EC763B /* Storyboards */,
+				C3E893B42792C70C00EC763B /* Resources */,
 				C3E893912792C59E00EC763B /* Info.plist */,
 			);
 			path = PoqApp;
@@ -168,6 +178,79 @@
 			path = PoqAppUITests;
 			sourceTree = "<group>";
 		};
+		C3E893B42792C70C00EC763B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3E893832792C59D00EC763B /* AppDelegate.swift */,
+				C3E893852792C59D00EC763B /* SceneDelegate.swift */,
+				C3E893BE2792C76B00EC763B /* Constants.swift */,
+				C3E8938C2792C59E00EC763B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3E893B52792C71800EC763B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C3E893892792C59D00EC763B /* Main.storyboard */,
+				C3E8938E2792C59E00EC763B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C3E893B62792C71F00EC763B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C3E893B72792C72500EC763B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3E893B82792C72B00EC763B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3E893C42792C81A00EC763B /* BaseViewController.swift */,
+				C3E893C62792C82A00EC763B /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3E893B92792C73100EC763B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C3E893C02792C7F900EC763B /* Alert.swift */,
+				C3E893C22792C80A00EC763B /* NetworkError.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C3E893BB2792C74000EC763B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3E893BC2792C74800EC763B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C3E893BD2792C75000EC763B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +263,7 @@
 				C3E8937D2792C59D00EC763B /* Frameworks */,
 				C3E8937E2792C59D00EC763B /* Resources */,
 				E1E2A1286A61B605DBA1E6A6 /* [CP] Embed Pods Frameworks */,
+				C3E893B32792C6E000EC763B /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -322,6 +406,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C3E893B32792C6E000EC763B /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		D6E2F7403A09696F36025BCC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,9 +509,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E893882792C59D00EC763B /* ViewController.swift in Sources */,
 				C3E893842792C59D00EC763B /* AppDelegate.swift in Sources */,
 				C3E893862792C59D00EC763B /* SceneDelegate.swift in Sources */,
+				C3E893C32792C80A00EC763B /* NetworkError.swift in Sources */,
+				C3E893C12792C7F900EC763B /* Alert.swift in Sources */,
+				C3E893C52792C81A00EC763B /* BaseViewController.swift in Sources */,
+				C3E893BF2792C76B00EC763B /* Constants.swift in Sources */,
+				C3E893C72792C82A00EC763B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,8 +701,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -624,8 +732,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
