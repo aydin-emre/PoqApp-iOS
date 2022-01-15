@@ -23,6 +23,11 @@
 		C3E893C32792C80A00EC763B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893C22792C80A00EC763B /* NetworkError.swift */; };
 		C3E893C52792C81A00EC763B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893C42792C81A00EC763B /* BaseViewController.swift */; };
 		C3E893C72792C82A00EC763B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893C62792C82A00EC763B /* MainViewController.swift */; };
+		C3E893C92792C9DA00EC763B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893C82792C9DA00EC763B /* NetworkManager.swift */; };
+		C3E893CB2792CFC500EC763B /* ReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893CA2792CFC500EC763B /* ReposResponse.swift */; };
+		C3E893D12792D00800EC763B /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893D02792D00700EC763B /* License.swift */; };
+		C3E893D32792D05F00EC763B /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893D22792D05F00EC763B /* Owner.swift */; };
+		C3E893D52792D12200EC763B /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E893D42792D12200EC763B /* Permissions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		C3E893C22792C80A00EC763B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C3E893C42792C81A00EC763B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C3E893C62792C82A00EC763B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C3E893C82792C9DA00EC763B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C3E893CA2792CFC500EC763B /* ReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposResponse.swift; sourceTree = "<group>"; };
+		C3E893D02792D00700EC763B /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		C3E893D22792D05F00EC763B /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		C3E893D42792D12200EC763B /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		C5CF6BBD85AC9C5A4623F755 /* Pods-PoqAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqAppTests.release.xcconfig"; path = "Target Support Files/Pods-PoqAppTests/Pods-PoqAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC20549F2E0119881774A834 /* Pods-PoqApp-PoqAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqApp-PoqAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoqApp-PoqAppUITests/Pods-PoqApp-PoqAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A75BA56D20050EE86A58DF /* Pods-PoqApp-PoqAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoqApp-PoqAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PoqApp-PoqAppUITests/Pods-PoqApp-PoqAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +243,10 @@
 		C3E893BB2792C74000EC763B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C3E893CA2792CFC500EC763B /* ReposResponse.swift */,
+				C3E893D02792D00700EC763B /* License.swift */,
+				C3E893D22792D05F00EC763B /* Owner.swift */,
+				C3E893D42792D12200EC763B /* Permissions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +254,7 @@
 		C3E893BC2792C74800EC763B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C3E893C82792C9DA00EC763B /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -512,9 +527,14 @@
 				C3E893842792C59D00EC763B /* AppDelegate.swift in Sources */,
 				C3E893862792C59D00EC763B /* SceneDelegate.swift in Sources */,
 				C3E893C32792C80A00EC763B /* NetworkError.swift in Sources */,
+				C3E893CB2792CFC500EC763B /* ReposResponse.swift in Sources */,
+				C3E893D52792D12200EC763B /* Permissions.swift in Sources */,
 				C3E893C12792C7F900EC763B /* Alert.swift in Sources */,
+				C3E893C92792C9DA00EC763B /* NetworkManager.swift in Sources */,
 				C3E893C52792C81A00EC763B /* BaseViewController.swift in Sources */,
 				C3E893BF2792C76B00EC763B /* Constants.swift in Sources */,
+				C3E893D32792D05F00EC763B /* Owner.swift in Sources */,
+				C3E893D12792D00800EC763B /* License.swift in Sources */,
 				C3E893C72792C82A00EC763B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
