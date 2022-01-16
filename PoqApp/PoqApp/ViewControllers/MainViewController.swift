@@ -46,7 +46,6 @@ class MainViewController: BaseViewController {
                 cell.configure(with: element)
             }
             .disposed(by: disposeBag)
-
     }
 
 }
