@@ -19,6 +19,8 @@ public class NetworkManager {
 
     static var shared = NetworkManager()
 
+    public var shouldShowLogs = true
+
     var eaAlert: EAAlert?
 
     private func request<T: Decodable>(of type: T.Type, forPath path: String, method: HTTPMethod = .post, parameters: Parameters? = nil, encoding: ParameterEncoding = URLEncoding.default, headers: HTTPHeaders? = nil, showLoadingView: Bool = false, completion: @escaping (Decodable?) -> Void) {
@@ -50,9 +52,11 @@ public class NetworkManager {
             }
         }
 
-        print("\n---------- URL: ----------\n \(baseURL+path)\n--------------------------\n")
-        print("\n------- HEADERS: -------\n \(inlineHeaders)\n--------------------------\n")
-        print("\n----- PARAMETERS: -----\n \(inlineParameters)\n--------------------------\n")
+        if shouldShowLogs {
+            print("\n---------- URL: ----------\n \(baseURL+path)\n--------------------------\n")
+            print("\n------- HEADERS: -------\n \(inlineHeaders)\n--------------------------\n")
+            print("\n----- PARAMETERS: -----\n \(inlineParameters)\n--------------------------\n")
+        }
 
         if let networkReachabilityManager = NetworkReachabilityManager(), networkReachabilityManager.isReachable {
             AF.request(baseURL+path,
@@ -71,10 +75,14 @@ public class NetworkManager {
                 case .success(_):
                     guard let responseValue = response.value else { return }
                     completion(responseValue)
-                    print("\n------- RESPONSE: ------\n \(responseValue)\n--------------------------\n")
+                    if self.shouldShowLogs {
+                        print("\n------- RESPONSE: ------\n \(responseValue)\n--------------------------\n")
+                    }
                 case .failure(_):
                     completion(nil)
-                    print("\n-------- ERROR: --------\n \(String(describing: response.error))\n-------------------------\n")
+                    if self.shouldShowLogs {
+                        print("\n-------- ERROR: --------\n \(String(describing: response.error))\n-------------------------\n")
+                    }
                 }
             }
         } else if let eaAlert = eaAlert {

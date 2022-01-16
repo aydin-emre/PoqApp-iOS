@@ -54,7 +54,7 @@ struct ReposResponse: Codable {
     let topics: [String]
     let visibility: Visibility
     let forks, openIssues, watchers: Int
-    let defaultBranch: DefaultBranch
+    let defaultBranch: String
     let permissions: Permissions
 
     enum CodingKeys: String, CodingKey {
@@ -133,9 +133,4 @@ struct ReposResponse: Codable {
         case permissions
     }
 
-}
-
-enum DefaultBranch: String, Codable {
-    case master
-    case the40Square = "4-0-square"
 }
